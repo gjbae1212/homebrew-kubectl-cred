@@ -5,16 +5,16 @@
 class KubectlCred < Formula
   desc "kubectl-cred is a kubernetes plugin to which switch to contexts using an interactive CLI."
   homepage ""
-  version "0.1.7"
+  version "0.1.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.1.7/kubectl-cred_v0.1.7_Darwin_x86_64.tar.gz"
-    sha256 "af4ed71a3c6a32ab20352e4b2b63c8cb3a32e2a4867448fda81d3522bfe58a58"
+    url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.1.8/kubectl-cred_v0.1.8_Darwin_x86_64.tar.gz"
+    sha256 "e14714bc1d063bbaea5bdeb631a77b6c54270a2df08e5f9a20d24aef5fb9cf8c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.1.7/kubectl-cred_v0.1.7_Linux_x86_64.tar.gz"
-    sha256 "ac2d19a64e7e1becf51fbe39517561729a92d1d1cd3c82b947f051735bce6387"
+    url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.1.8/kubectl-cred_v0.1.8_Linux_x86_64.tar.gz"
+    sha256 "515b187a887177b0cfbdfe786a3ce2dcc27672fc8311107de76ed38162c61cc6"
   end
 
   def install
