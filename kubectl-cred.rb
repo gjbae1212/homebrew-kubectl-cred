@@ -5,24 +5,28 @@
 class KubectlCred < Formula
   desc "kubectl-cred is a kubernetes plugin to which switch to contexts using an interactive CLI."
   homepage ""
-  version "0.2.1"
+  version "0.2.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.1/kubectl-cred_v0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "9ca080f953f21aa4fedec59bcaa82e9ed0955c6a017d91f14ff91d6603081ec5"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.2/kubectl-cred_v0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "7bb6edc49bfaf62037f77159ebc2d7b1a7e445c90de979828da06bdcdddf520c"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.2/kubectl-cred_v0.2.2_Darwin_arm64.tar.gz"
+      sha256 "f80af0a0718a342908b11913123cf1d4ef46a32d726a0b2dd5d1514a80d113f9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.1/kubectl-cred_v0.2.1_Linux_x86_64.tar.gz"
-      sha256 "32420295b6f6761b3f28938b72237224bec6dc9bde9186ae3c2bb1da08ca080c"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.2/kubectl-cred_v0.2.2_Linux_x86_64.tar.gz"
+      sha256 "f162d2eb85f8e780b1a44ebea21ef695d32c37ba164a77f78cc23a943fadfc89"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.1/kubectl-cred_v0.2.1_Linux_arm64.tar.gz"
-      sha256 "ee7e690b358c93ba9aefd66d8efff78e6c5a92e95eb23f2f0e1fad5a0f30d7d7"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.2/kubectl-cred_v0.2.2_Linux_arm64.tar.gz"
+      sha256 "9fe5e215a32a77b0f86125a3f45e5da1a27114b1d16b11cb498b2bfc3202a627"
     end
   end
 
