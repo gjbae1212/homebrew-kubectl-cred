@@ -5,20 +5,20 @@
 class KubectlCred < Formula
   desc "kubectl-cred is a kubernetes plugin to which switch to contexts using an interactive CLI."
   homepage ""
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.3/kubectl-cred_v0.2.3_Darwin_arm64.tar.gz"
-      sha256 "f48fe6f78fa9a1780fd9554287b211c7c2e19cbb0588117c97886f4c57261cb1"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.4/kubectl-cred_v0.2.4_Darwin_arm64.tar.gz"
+      sha256 "ac9b675486e998b0fb74ed5bb5da6994c6fadd55f512eba97bb472bafbc7e6d9"
 
       def install
         bin.install "kubectl-cred"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.3/kubectl-cred_v0.2.3_Darwin_x86_64.tar.gz"
-      sha256 "a3f7b08559e82ebf6d7663771b296060b9b694a3212f0f2f867fa0ce3d5a90fd"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.4/kubectl-cred_v0.2.4_Darwin_x86_64.tar.gz"
+      sha256 "202fdfa0eb71e6028329572bf1ff8c27f03bb03c20956e57df6fff7ce3dadc13"
 
       def install
         bin.install "kubectl-cred"
@@ -28,16 +28,16 @@ class KubectlCred < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.3/kubectl-cred_v0.2.3_Linux_arm64.tar.gz"
-      sha256 "280b605425a002080b355b8425fe0bbfcb70022d85456b5d8dde74ead8c7e4a1"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.4/kubectl-cred_v0.2.4_Linux_arm64.tar.gz"
+      sha256 "c6d60ff89aa750c8a689d1771bfc2de714a9093a07901a227ab9b3476de5ebce"
 
       def install
         bin.install "kubectl-cred"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.3/kubectl-cred_v0.2.3_Linux_x86_64.tar.gz"
-      sha256 "962a6441fccf9628016b9c33be20804f4e2d0a2372182fa291ea43ee1292a325"
+      url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.4/kubectl-cred_v0.2.4_Linux_x86_64.tar.gz"
+      sha256 "93e7feab30073f6060b364974242d6603e8cfb485cdcf16ea8e96334f6e9bb2e"
 
       def install
         bin.install "kubectl-cred"
