@@ -10,7 +10,7 @@ class KubectlCred < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.6/kubectl-cred_v0.2.6_Darwin_arm64.tar.gz"
-      sha256 "a46d93944e9421e2d03854d6b7aa0e051e2c45fb75c3e2cdd4cd80ac3e103ed4"
+      sha256 "a46db6760f0b14d9ce4c22da232bcbf3da2baa22f9c9f97d43483389d3f8ee52"
 
       def install
         bin.install "kubectl-cred"
@@ -18,7 +18,7 @@ class KubectlCred < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.6/kubectl-cred_v0.2.6_Darwin_x86_64.tar.gz"
-      sha256 "f2f0efefd4c7a96d3a4dfc18a56b03e95e3660a56a59304fb98e5160c7cfcd7e"
+      sha256 "248146599943a836e433c387827c724875ca2c2e1ab55839a03bf9da4846f9a0"
 
       def install
         bin.install "kubectl-cred"
@@ -29,7 +29,7 @@ class KubectlCred < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.6/kubectl-cred_v0.2.6_Linux_arm64.tar.gz"
-      sha256 "4bf636c39f7377fccc51cf316fdccf219fc6151b3e428913e2c4e289c7f32e09"
+      sha256 "7eb098c5155d9ea0b49cb677d0bda14ed0a7f5692730302986a0c551076ad698"
 
       def install
         bin.install "kubectl-cred"
@@ -37,7 +37,7 @@ class KubectlCred < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/gjbae1212/kubectl-cred/releases/download/v0.2.6/kubectl-cred_v0.2.6_Linux_x86_64.tar.gz"
-      sha256 "5acadfb9e4768b55f4bc8e327271f22d492b3c79370a50cd32910366169bff3f"
+      sha256 "a3840f175c47bca5c00df5ecac15c42af43e07b859e2d73ec89cffe5ecc04a9d"
 
       def install
         bin.install "kubectl-cred"
